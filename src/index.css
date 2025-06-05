@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+* {
+     font-family: "Poppins"
+}
+
+label {
+    font-size: 18px;
+    text-transform:capitalize;
+    /* opacity: ; */
+}
+
+p {
+    font-size: 15px;
+    text-transform:capitalize;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+}
+
+button {
+    /* font-size: 18px; */
+}
+
+h1 {
+    font-weight: 800;
+}
+h2 {
+    font-weight: 700;
+}
+h3 {
+    font-weight: 600;
+}
+h4 {
+    font-weight: 500;
+}
+h5 {
+    font-weight: 400;
+}
+
+.react-calendar {
+  @apply w-full border-none text-sm;
+}
+
+.react-calendar__navigation {
+  @apply flex items-center justify-between mb-4;
+}
+
+.react-calendar__navigation button {
+  @apply text-[#007E85] font-semibold hover:underline text-sm;
+}
+
+.react-calendar__month-view__weekdays {
+  @apply text-center text-gray-500 uppercase text-xs;
+}
+
+.react-calendar__tile {
+  @apply text-center py-2 hover:bg-[#49BBBD22] rounded-md transition duration-200 text-sm;
+}
+
+.react-calendar__tile--active {
+  @apply bg-[#49BBBD] text-white rounded-md;
+}
+
+.react-calendar__tile--now {
+  @apply bg-[#dff4f5] text-[#007E85] font-semibold rounded-md;
+}
